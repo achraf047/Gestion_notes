@@ -10,6 +10,7 @@ public class ListEtudiants extends ArrayList<Etudiant> {
 		// TODO Auto-generated method stub
 		else
 			return super.add(e);
+		
 	}
 
 }
