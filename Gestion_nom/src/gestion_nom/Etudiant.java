@@ -2,7 +2,7 @@ package gestion_nom;
 
 import aiac.gi18.java.complexe.Complexe;
 
-public class Etudiant {
+public class Etudiant implements Comparable<Etudiant> {
 	private int id;
 	private String nom;
 	private Double note;
@@ -22,6 +22,14 @@ public class Etudiant {
 			return false;
 		}
 		return ((Etudiant) obj).id == this.id;
+	}
+
+	@Override
+	public int compareTo(Etudiant e) {
+		if(this.note==e.note) return 0;
+		if(this.note>e.note) return 1;
+		return -1;
+		// TODO Auto-generated method stubs
 	}
 
 }
