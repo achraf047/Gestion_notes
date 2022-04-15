@@ -10,6 +10,5 @@ public class Etudiant {
 		this.nom = nom;
 		this.note = 10.0;
    }
-	
 
 }
