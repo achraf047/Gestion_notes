@@ -5,5 +5,11 @@ public class Etudiant {
 	private String nom;
 	private Double note;
 	
+	public  Etudiant(int id , String nom) {
+		this.id = id;
+		this.nom = nom;
+		this.note = 10.0;
+   }
+	
 
 }
