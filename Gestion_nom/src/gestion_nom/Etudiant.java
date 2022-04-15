@@ -10,5 +10,10 @@ public class Etudiant {
 		this.nom = nom;
 		this.note = 10.0;
    }
+	public String toString()
+	{
+		return this.nom+ " : "+this.note;
+	}
+
 
 }
